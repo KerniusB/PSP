@@ -1,7 +1,7 @@
 public class PhoneValidator {
 
     public boolean validatePhone(String phone) {
-        String prefix ="+370";
+        String prefix = "+370";
         int minLength = 10;
 
         return phoneContainsNumbersOnly(phone) && phoneStartsWith(phone, prefix) && phoneLengthCorrect(phone, minLength);

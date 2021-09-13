@@ -1,8 +1,8 @@
 public class PasswordChecker {
 
     public boolean validatePassword(String password) {
-        int minLength= 7;
-        char[] invalidSymbols={'@'};
+        int minLength = 7;
+        char[] invalidSymbols = {'@'};
 
         return passwordNotShorterThan(password, minLength) && passwordContainsUppercase(password) && passwordContainsSpecSymbol(password, invalidSymbols);
     }

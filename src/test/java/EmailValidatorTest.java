@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class EmailValidatorTest {
-    EmailValidator emailValidator=new EmailValidator();
+    EmailValidator emailValidator = new EmailValidator();
 
     @Test
     void emailContainsAtSign_shouldPass() {
@@ -13,6 +13,7 @@ class EmailValidatorTest {
 
         assertTrue(result);
     }
+
     @Test
     void emailContainsAtSign_shouldFail() {
         String email = "emailmail.com";
@@ -30,6 +31,7 @@ class EmailValidatorTest {
 
         assertTrue(result);
     }
+
     @Test
     void emailDoesNotContainInvalidSymbols_shouldFail() {
         String email = "email@ mail.com";
@@ -47,6 +49,7 @@ class EmailValidatorTest {
 
         assertTrue(result);
     }
+
     @Test
     void emailHasCorrectDomain_shouldFail() {
         String email = "email@wrong domain.com";
@@ -64,6 +67,7 @@ class EmailValidatorTest {
 
         assertTrue(result);
     }
+
     @Test
     void emailHasCorrectTld_ShouldFail() {
         String email = "email@mail.com wrong";

@@ -3,7 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PhoneValidatorTest {
-    PhoneValidator phoneValidator= new PhoneValidator();
+    PhoneValidator phoneValidator = new PhoneValidator();
 
     @Test
     void phoneContainsNumbersOnly_shouldPass() {
