@@ -20,7 +20,7 @@ class PhoneValidatorTest {
 
         boolean result = phoneValidator.validatePhone(phone);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -38,7 +38,7 @@ class PhoneValidatorTest {
 
         boolean result = phoneValidator.validatePhone(phone);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -56,6 +56,6 @@ class PhoneValidatorTest {
 
         boolean result = phoneValidator.validatePhone(phone);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 }

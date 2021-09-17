@@ -20,7 +20,7 @@ class EmailValidatorTest {
 
         boolean result = emailValidator.validateEmail(email);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -38,7 +38,7 @@ class EmailValidatorTest {
 
         boolean result = emailValidator.validateEmail(email);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -56,7 +56,7 @@ class EmailValidatorTest {
 
         boolean result = emailValidator.validateEmail(email);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -74,6 +74,6 @@ class EmailValidatorTest {
 
         boolean result = emailValidator.validateEmail(email);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 }

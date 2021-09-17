@@ -20,7 +20,7 @@ class PasswordCheckerTest {
 
         boolean result = passwordChecker.validatePassword(password);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -38,7 +38,7 @@ class PasswordCheckerTest {
 
         boolean result = passwordChecker.validatePassword(password);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
@@ -56,6 +56,6 @@ class PasswordCheckerTest {
 
         boolean result = passwordChecker.validatePassword(password);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 }
